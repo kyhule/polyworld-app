@@ -1,0 +1,17 @@
+name: Post-merge
+
+on:
+  push:
+    branches:
+      - main
+      - 'release/**'
+
+jobs:
+  build:
+    uses: kyhule/polyworld-workflows/.github/workflows/post-merge.yml@dcd13b2607582b3527dc6d0a11a6d56b8020aac2
+    secrets: inherit
+    with:
+      android-archive-app-outputs: true
+      android-archive-app-reports: true
+      publish-artifacts: false
+      publish-release: false
