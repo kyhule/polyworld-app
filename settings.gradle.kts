@@ -1,17 +1,18 @@
+rootProject.name = "polyworld-app"
+
 pluginManagement {
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
+        maven {
+            name = "githubPackages"
+            url = uri("https://maven.pkg.github.com/kyhule/*")
+            credentials(PasswordCredentials::class)
+        }
     }
 }
 
-rootProject.name = "polyworld-app"
-
+plugins {
+    id("com.github.kyhule.polyworld.build.settings") version "0.1.0"
+}
