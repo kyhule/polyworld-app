@@ -11,6 +11,11 @@ pluginManagement {
             credentials(PasswordCredentials::class)
         }
     }
+    if (file("../polyworld-gradle-plugin/.composite-include").exists()) {
+        includeBuild("../polyworld-gradle-plugin") {
+            logger.lifecycle("Including polyworld-gradle-plugin...")
+        }
+    }
 }
 
 plugins {
