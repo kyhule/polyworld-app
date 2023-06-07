@@ -1,4 +1,5 @@
 rootProject.name = "polyworld-app"
+include(":app")
 
 pluginManagement {
     repositories {
@@ -19,5 +20,5 @@ pluginManagement {
 }
 
 plugins {
-    id("com.github.kyhule.polyworld.build.settings") version "0.1.0"
+    id("com.github.kyhule.polyworld.build.settings") version "0.2.0-SNAPSHOT"
 }
