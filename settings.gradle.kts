@@ -26,7 +26,7 @@ plugins {
 dependencyResolutionManagement {
     versionCatalogs {
         create("externalLibs") {
-            from("com.github.kyhule.polyworld.build:polyworld-external-catalog:1.0.0")
+            from("com.github.kyhule.polyworld.build:polyworld-external-catalog:1.1.0")
         }
     }
 }
