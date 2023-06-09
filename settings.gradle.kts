@@ -1,4 +1,5 @@
 rootProject.name = "polyworld-app"
+
 include(":app")
 
 pluginManagement {
@@ -19,14 +20,21 @@ pluginManagement {
     }
 }
 
-plugins {
-    id("com.github.kyhule.polyworld.build.settings") version "0.3.0"
-}
+plugins { id("com.github.kyhule.polyworld.build.settings") version "0.3.0" }
 
 dependencyResolutionManagement {
     versionCatalogs {
         create("externalLibs") {
             from("com.github.kyhule.polyworld.build:polyworld-external-catalog:1.1.0")
+        }
+    }
+}
+
+if (file("../polyworld-theme/.composite-include").exists()) {
+    logger.lifecycle("Including polyworld-theme...")
+    includeBuild("../polyworld-theme") {
+        dependencySubstitution {
+            substitute(module("com.github.kyhule.polyworld.ui:theme")).using(project(":theme"))
         }
     }
 }
