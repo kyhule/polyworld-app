@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.ui.theme)
     implementation(externalLibs.androidx.coreKtx)
     implementation(externalLibs.androidx.lifecycle.runtimeKtx)
     implementation(externalLibs.androidx.activity.compose)
