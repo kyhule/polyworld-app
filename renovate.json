@@ -1,15 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ],
-  "hostRules": [
-    {
-      "matchHost": "https://maven.pkg.github.com/",
-      "hostType": "maven",
-      "encrypted": {
-        "token": "wcFMA/xDdHCJBTolAQ/+LpODQ8gDmpRzhhXb1SzRlOv7K9wnHd6WrIV/iy61PswMjClCOigL5QXFKQRz3zMnLoINNr6pjgsn76O0lEKpNMSbrdImiqh1kSSRu3naU1DCcjRtocaGyCh6SbxvD6gEfzNcovGBSxVhxby1Jri4eHvN2MsyXZW03K/4aJjE+iwBFSfwWR8IjuW1w3aLzY0v+iuX9edjWP1TpkLcrO81PH0T7I+Xzf2iAPhsubw87x2qS5jy/hY+YbKxCxm67jq5eKl3U+lYGTzgw1q5zn3wSnXqHiTZYB/IJnQV4QCIEoJiGvKRun+bil7p7mVDePDTFigbG0OWAuvGv8qFvjX1BC8DjMM4+T1qXA24RBEliqz39e1C13ucpUavaQBSKedxBu4RAC9bQtydFApHnoUAEycUjQl4tryfjc8J/oSCGmwWkRkYfXSdC+JCFNLq9XLUPaIQ/H+ZUjnAOvHOxvcUjceW+C5t8H+qJ9R/ovDPoUP4W689PRupIJ2yieMpOYalyVrKwCEqUDWdXvrwgT5d15FpYe5EeAz5y+Rwmr9xBncWVtpNnz7MPsPVvQ+nS94hHAfdIEqGQ2KDBcpAgo3F9bTOGeBqUvqUiUTZaCqNCG945qaLu5t4Ck/VPYHdYmharKBM2gH71NOtyrbpk5eNdThgA/3xpqbw+dg901bWRt3SdQEU8f6sF6flZn9CbXx53c6V4ocZ4WUZ7dnt2EMvMgkrfhlnN4HWFuyZBJKtPuRQZk7Fx9mBHbiyteaJ9MV/Pu4hbPU+ajQBhsYFRWE3O2l0yYH9tWnzDNCKvL2pRklDH83V7AVmYy5UtQGf8DQT7/92HGciuA"
-      }
-    }
+    "kyhule/polyworld-renovate:android"
   ]
 }
