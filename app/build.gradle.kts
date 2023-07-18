@@ -1,5 +1,6 @@
 plugins {
     `polyworld-android-app`
+    id("com.squareup.sort-dependencies") version "0.3"
 }
 
 android {
