@@ -1,2 +1,32 @@
+[versions]
+android-plugin = "8.0.2"
+dependencyAnalysis = "1.20.0"
+dependencySorter = "0.3"
+githubRelease = "2.4.1"
+gradleDoctor = "0.8.1"
+kotlin = "1.8.21"
+mavenPublish = "0.25.2"
+reckon = "0.18.0"
+sonar = "4.0.0.2929"
+
 [libraries]
 ui-theme = "com.github.kyhule.polyworld.ui:theme:0.1.0"
+gradlePlugin-android = { module = "com.android.tools.build:gradle", version.ref = "android-plugin" }
+gradlePlugin-dependencyAnalysis = { module = "com.autonomousapps:dependency-analysis-gradle-plugin", version.ref = "dependencyAnalysis" }
+gradlePlugin-doctor = { module = "com.osacky.doctor:doctor-plugin", version.ref = "gradleDoctor" }
+gradlePlugin-githubRelease = { module = "com.github.breadmoirai:github-release", version.ref = "githubRelease" }
+gradlePlugin-gradleAndroidCacheFix = "org.gradle.android.cache-fix:org.gradle.android.cache-fix.gradle.plugin:2.7.0"
+gradlePlugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+gradlePlugin-mavenPublish = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "mavenPublish" }
+gradlePlugin-reckon = { module = "org.ajoberstar.reckon:reckon-gradle", version.ref = "reckon" }
+gradlePlugin-sonar = { module = "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin", version.ref = "sonar" }
+kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
+
+[plugins]
+dependencyAnalysis = { id = "com.autonomousapps.dependency-analysis", version.ref = "dependencyAnalysis" }
+dependencySorter = { id = "com.squareup.sort-dependencies", version.ref = "dependencySorter" }
+githubRelease = { id = "com.github.breadmoirai.github-release", version.ref = "githubRelease" }
+gradleDoctor = { id = "com.osacky.doctor", version.ref = "gradleDoctor" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
+reckon = { id = "org.ajoberstar.reckon", version.ref = "reckon" }
