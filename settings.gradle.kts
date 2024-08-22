@@ -19,12 +19,16 @@ pluginManagement {
     }
 }
 
-plugins { id("com.github.kyhule.polyworld.build.settings") version "0.9.0" }
+plugins { id("com.github.kyhule.polyworld.build.settings") version "1.0.0-SNAPSHOT" }
 
 dependencyResolutionManagement {
     versionCatalogs {
         create("externalLibs") {
-            from("com.github.kyhule.polyworld.build:polyworld-external-catalog:1.1.0")
+            if (file("../polyworld-external-catalog/.composite-include").exists()) {
+                from(files("../polyworld-external-catalog/gradle/libs.versions.toml"))
+            } else {
+                from("com.github.kyhule.polyworld.build:polyworld-external-catalog:1.3.0")
+            }
         }
     }
 }
