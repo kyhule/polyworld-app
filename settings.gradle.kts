@@ -19,7 +19,7 @@ pluginManagement {
     }
 }
 
-plugins { id("com.github.kyhule.polyworld.build.settings") version "1.0.0-SNAPSHOT" }
+plugins { id("com.github.kyhule.polyworld.build.settings") version "1.0.0" }
 
 dependencyResolutionManagement {
     versionCatalogs {
