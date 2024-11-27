@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    uses: kyhule/polyworld-workflows/.github/workflows/post-merge.yml@a26f05dbaa65b38aef88fd576709fdce64059d07
+    uses: kyhule/polyworld-workflows/.github/workflows/post-merge.yml@f0a535faadb2aafdd961219125457f01ad2964f1
     secrets: inherit
     with:
       android-archive-app-outputs: true
